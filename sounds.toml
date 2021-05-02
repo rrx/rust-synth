@@ -1,0 +1,1725 @@
+[[sound]]
+key = "R"
+seq = 0
+path = "assets/sounds/foxdot/r/upper/0_metallic.wav"
+    
+[[sound]]
+key = "R"
+seq = 1
+path = "assets/sounds/foxdot/r/upper/2_metallic.wav"
+    
+[[sound]]
+key = "R"
+seq = 2
+path = "assets/sounds/foxdot/r/upper/3_metallic.wav"
+    
+[[sound]]
+key = "R"
+seq = 3
+path = "assets/sounds/foxdot/r/upper/4_metallic.wav"
+    
+[[sound]]
+key = "r"
+seq = 0
+path = "assets/sounds/foxdot/r/lower/0_metal.wav"
+    
+[[sound]]
+key = "r"
+seq = 1
+path = "assets/sounds/foxdot/r/lower/1_metal.wav"
+    
+[[sound]]
+key = "r"
+seq = 2
+path = "assets/sounds/foxdot/r/lower/2_metal.wav"
+    
+[[sound]]
+key = "r"
+seq = 3
+path = "assets/sounds/foxdot/r/lower/4_metal.wav"
+    
+[[sound]]
+key = "r"
+seq = 4
+path = "assets/sounds/foxdot/r/lower/5_metal.wav"
+    
+[[sound]]
+key = "r"
+seq = 5
+path = "assets/sounds/foxdot/r/lower/6_metal.wav"
+    
+[[sound]]
+key = "r"
+seq = 6
+path = "assets/sounds/foxdot/r/lower/7_metal.wav"
+    
+[[sound]]
+key = "U"
+seq = 0
+path = "assets/sounds/foxdot/u/upper/0_misc.wav"
+    
+[[sound]]
+key = "U"
+seq = 1
+path = "assets/sounds/foxdot/u/upper/1_misc.wav"
+    
+[[sound]]
+key = "U"
+seq = 2
+path = "assets/sounds/foxdot/u/upper/2_misc.wav"
+    
+[[sound]]
+key = "U"
+seq = 3
+path = "assets/sounds/foxdot/u/upper/3_misc.wav"
+    
+[[sound]]
+key = "U"
+seq = 4
+path = "assets/sounds/foxdot/u/upper/4_misc.wav"
+    
+[[sound]]
+key = "u"
+seq = 0
+path = "assets/sounds/foxdot/u/lower/soft_snare_0.wav"
+    
+[[sound]]
+key = "u"
+seq = 1
+path = "assets/sounds/foxdot/u/lower/soft_snare_1.wav"
+    
+[[sound]]
+key = "u"
+seq = 2
+path = "assets/sounds/foxdot/u/lower/soft_snare_2.wav"
+    
+[[sound]]
+key = "u"
+seq = 3
+path = "assets/sounds/foxdot/u/lower/soft_snare_3.wav"
+    
+[[sound]]
+key = "u"
+seq = 4
+path = "assets/sounds/foxdot/u/lower/soft_snare_4.wav"
+    
+[[sound]]
+key = "I"
+seq = 0
+path = "assets/sounds/foxdot/i/upper/0_rock_snare.wav"
+    
+[[sound]]
+key = "I"
+seq = 1
+path = "assets/sounds/foxdot/i/upper/1_rock_snare.wav"
+    
+[[sound]]
+key = "I"
+seq = 2
+path = "assets/sounds/foxdot/i/upper/1_snare_drum.wav"
+    
+[[sound]]
+key = "I"
+seq = 3
+path = "assets/sounds/foxdot/i/upper/2_rock_snare.wav"
+    
+[[sound]]
+key = "I"
+seq = 4
+path = "assets/sounds/foxdot/i/upper/3_rock_snare.wav"
+    
+[[sound]]
+key = "i"
+seq = 0
+path = "assets/sounds/foxdot/i/lower/0_jungle_snare.wav"
+    
+[[sound]]
+key = "i"
+seq = 1
+path = "assets/sounds/foxdot/i/lower/1_jungle_snare.wav"
+    
+[[sound]]
+key = "i"
+seq = 2
+path = "assets/sounds/foxdot/i/lower/2_jungle_snare.wav"
+    
+[[sound]]
+key = "i"
+seq = 3
+path = "assets/sounds/foxdot/i/lower/3_jungle_snare.wav"
+    
+[[sound]]
+key = "i"
+seq = 4
+path = "assets/sounds/foxdot/i/lower/4_jungle_snare.wav"
+    
+[[sound]]
+key = "i"
+seq = 5
+path = "assets/sounds/foxdot/i/lower/6_jungle_snare.wav"
+    
+[[sound]]
+key = "N"
+seq = 0
+path = "assets/sounds/foxdot/n/upper/Openhat01.wav"
+    
+[[sound]]
+key = "N"
+seq = 1
+path = "assets/sounds/foxdot/n/upper/Openhat03.wav"
+    
+[[sound]]
+key = "N"
+seq = 2
+path = "assets/sounds/foxdot/n/upper/Openhat08.wav"
+    
+[[sound]]
+key = "N"
+seq = 3
+path = "assets/sounds/foxdot/n/upper/Openhat09.wav"
+    
+[[sound]]
+key = "N"
+seq = 4
+path = "assets/sounds/foxdot/n/upper/Openhat10.wav"
+    
+[[sound]]
+key = "N"
+seq = 5
+path = "assets/sounds/foxdot/n/upper/noise_hat_open_0.wav"
+    
+[[sound]]
+key = "n"
+seq = 0
+path = "assets/sounds/foxdot/n/lower/Closedhat02.wav"
+    
+[[sound]]
+key = "n"
+seq = 1
+path = "assets/sounds/foxdot/n/lower/Closedhat04.wav"
+    
+[[sound]]
+key = "n"
+seq = 2
+path = "assets/sounds/foxdot/n/lower/Closedhat05.wav"
+    
+[[sound]]
+key = "n"
+seq = 3
+path = "assets/sounds/foxdot/n/lower/Closedhat06.wav"
+    
+[[sound]]
+key = "n"
+seq = 4
+path = "assets/sounds/foxdot/n/lower/Closedhat08.wav"
+    
+[[sound]]
+key = "n"
+seq = 5
+path = "assets/sounds/foxdot/n/lower/Closedhat10.wav"
+    
+[[sound]]
+key = "G"
+seq = 0
+path = "assets/sounds/foxdot/g/upper/0_Stab.wav"
+    
+[[sound]]
+key = "G"
+seq = 1
+path = "assets/sounds/foxdot/g/upper/GHOST.wav"
+    
+[[sound]]
+key = "g"
+seq = 0
+path = "assets/sounds/foxdot/g/lower/om0.wav"
+    
+[[sound]]
+key = "g"
+seq = 1
+path = "assets/sounds/foxdot/g/lower/om1.wav"
+    
+[[sound]]
+key = "g"
+seq = 2
+path = "assets/sounds/foxdot/g/lower/om2.wav"
+    
+[[sound]]
+key = "g"
+seq = 3
+path = "assets/sounds/foxdot/g/lower/om3.wav"
+    
+[[sound]]
+key = "Z"
+seq = 0
+path = "assets/sounds/foxdot/z/upper/K1.wav"
+    
+[[sound]]
+key = "Z"
+seq = 1
+path = "assets/sounds/foxdot/z/upper/K2.wav"
+    
+[[sound]]
+key = "Z"
+seq = 2
+path = "assets/sounds/foxdot/z/upper/K3.wav"
+    
+[[sound]]
+key = "z"
+seq = 0
+path = "assets/sounds/foxdot/z/lower/0_scratch.wav"
+    
+[[sound]]
+key = "z"
+seq = 1
+path = "assets/sounds/foxdot/z/lower/1_scratch.wav"
+    
+[[sound]]
+key = "z"
+seq = 2
+path = "assets/sounds/foxdot/z/lower/2_scratch.wav"
+    
+[[sound]]
+key = "z"
+seq = 3
+path = "assets/sounds/foxdot/z/lower/rewind-rewind.wav"
+    
+[[sound]]
+key = "T"
+seq = 0
+path = "assets/sounds/foxdot/t/upper/0_metal_cowbell.wav"
+    
+[[sound]]
+key = "T"
+seq = 1
+path = "assets/sounds/foxdot/t/upper/cowbell_1.wav"
+    
+[[sound]]
+key = "T"
+seq = 2
+path = "assets/sounds/foxdot/t/upper/cowbell_2.wav"
+    
+[[sound]]
+key = "t"
+seq = 0
+path = "assets/sounds/foxdot/t/lower/alt_rimshot_0.wav"
+    
+[[sound]]
+key = "t"
+seq = 1
+path = "assets/sounds/foxdot/t/lower/alt_rimshot_1.wav"
+    
+[[sound]]
+key = "t"
+seq = 2
+path = "assets/sounds/foxdot/t/lower/alt_rimshot_2.wav"
+    
+[[sound]]
+key = "t"
+seq = 3
+path = "assets/sounds/foxdot/t/lower/alt_rimshot_3.wav"
+    
+[[sound]]
+key = "t"
+seq = 4
+path = "assets/sounds/foxdot/t/lower/rimshot_01.wav"
+    
+[[sound]]
+key = "t"
+seq = 5
+path = "assets/sounds/foxdot/t/lower/rimshot_02.wav"
+    
+[[sound]]
+key = "S"
+seq = 0
+path = "assets/sounds/foxdot/s/upper/0_tamborine.wav"
+    
+[[sound]]
+key = "S"
+seq = 1
+path = "assets/sounds/foxdot/s/upper/1_tamborine.wav"
+    
+[[sound]]
+key = "S"
+seq = 2
+path = "assets/sounds/foxdot/s/upper/2_tamborine.wav"
+    
+[[sound]]
+key = "s"
+seq = 0
+path = "assets/sounds/foxdot/s/lower/0_shaker.wav"
+    
+[[sound]]
+key = "s"
+seq = 1
+path = "assets/sounds/foxdot/s/lower/1_shaker.wav"
+    
+[[sound]]
+key = "s"
+seq = 2
+path = "assets/sounds/foxdot/s/lower/2_shaker.wav"
+    
+[[sound]]
+key = "s"
+seq = 3
+path = "assets/sounds/foxdot/s/lower/3_shaker.wav"
+    
+[[sound]]
+key = "A"
+seq = 0
+path = "assets/sounds/foxdot/a/upper/0_dist_kick.wav"
+    
+[[sound]]
+key = "A"
+seq = 1
+path = "assets/sounds/foxdot/a/upper/1_dist_kick.wav"
+    
+[[sound]]
+key = "A"
+seq = 2
+path = "assets/sounds/foxdot/a/upper/2_dist_kick.wav"
+    
+[[sound]]
+key = "a"
+seq = 0
+path = "assets/sounds/foxdot/a/lower/gb_hihat 0.wav"
+    
+[[sound]]
+key = "a"
+seq = 1
+path = "assets/sounds/foxdot/a/lower/gb_hihat 1.wav"
+    
+[[sound]]
+key = "a"
+seq = 2
+path = "assets/sounds/foxdot/a/lower/gb_hihat 2.wav"
+    
+[[sound]]
+key = "a"
+seq = 3
+path = "assets/sounds/foxdot/a/lower/gb_hihat 3.wav"
+    
+[[sound]]
+key = "a"
+seq = 4
+path = "assets/sounds/foxdot/a/lower/gb_hihat 4.wav"
+    
+[[sound]]
+key = "-"
+seq = 0
+path = "assets/sounds/foxdot/_/hyphen/0_hihat_closed.wav"
+    
+[[sound]]
+key = "-"
+seq = 1
+path = "assets/sounds/foxdot/_/hyphen/1_hihat_closed.wav"
+    
+[[sound]]
+key = "-"
+seq = 2
+path = "assets/sounds/foxdot/_/hyphen/2_hihat_closed.wav"
+    
+[[sound]]
+key = "-"
+seq = 3
+path = "assets/sounds/foxdot/_/hyphen/3_hihat_closed.wav"
+    
+[[sound]]
+key = "-"
+seq = 4
+path = "assets/sounds/foxdot/_/hyphen/4_hihat_closed.wav"
+    
+[[sound]]
+key = "-"
+seq = 5
+path = "assets/sounds/foxdot/_/hyphen/5_hihat_closed.wav"
+    
+[[sound]]
+key = "-"
+seq = 6
+path = "assets/sounds/foxdot/_/hyphen/9_hihat_closed.wav"
+    
+[[sound]]
+key = "#"
+seq = 0
+path = "assets/sounds/foxdot/_/hash/0_crash.wav"
+    
+[[sound]]
+key = "#"
+seq = 1
+path = "assets/sounds/foxdot/_/hash/1_crash.wav"
+    
+[[sound]]
+key = "#"
+seq = 2
+path = "assets/sounds/foxdot/_/hash/2_crash.wav"
+    
+[[sound]]
+key = "#"
+seq = 3
+path = "assets/sounds/foxdot/_/hash/3_crash.wav"
+    
+[[sound]]
+key = "/"
+seq = 0
+path = "assets/sounds/foxdot/_/forwardslash/0_cymrev.wav"
+    
+[[sound]]
+key = "/"
+seq = 1
+path = "assets/sounds/foxdot/_/forwardslash/1_rev.wav"
+    
+[[sound]]
+key = ":"
+seq = 0
+path = "assets/sounds/foxdot/_/colon/hh01.wav"
+    
+[[sound]]
+key = ":"
+seq = 1
+path = "assets/sounds/foxdot/_/colon/hh02.wav"
+    
+[[sound]]
+key = ":"
+seq = 2
+path = "assets/sounds/foxdot/_/colon/hh03.wav"
+    
+[[sound]]
+key = ":"
+seq = 3
+path = "assets/sounds/foxdot/_/colon/hh04.wav"
+    
+[[sound]]
+key = "%"
+seq = 0
+path = "assets/sounds/foxdot/_/percent/noise_0.wav"
+    
+[[sound]]
+key = "%"
+seq = 1
+path = "assets/sounds/foxdot/_/percent/noise_1.wav"
+    
+[[sound]]
+key = "%"
+seq = 2
+path = "assets/sounds/foxdot/_/percent/noise_2.wav"
+    
+[[sound]]
+key = "%"
+seq = 3
+path = "assets/sounds/foxdot/_/percent/noise_3.wav"
+    
+[[sound]]
+key = "%"
+seq = 4
+path = "assets/sounds/foxdot/_/percent/noise_4.wav"
+    
+[[sound]]
+key = "@"
+seq = 0
+path = "assets/sounds/foxdot/_/ampersand/2_triangle.wav"
+    
+[[sound]]
+key = "@"
+seq = 1
+path = "assets/sounds/foxdot/_/ampersand/3_triangle.wav"
+    
+[[sound]]
+key = "@"
+seq = 2
+path = "assets/sounds/foxdot/_/ampersand/4_metal.wav"
+    
+[[sound]]
+key = "$"
+seq = 0
+path = "assets/sounds/foxdot/_/dollar/0_bb_kick.wav"
+    
+[[sound]]
+key = "$"
+seq = 1
+path = "assets/sounds/foxdot/_/dollar/1_bb_hihat.wav"
+    
+[[sound]]
+key = "$"
+seq = 2
+path = "assets/sounds/foxdot/_/dollar/2_bb_snare.wav"
+    
+[[sound]]
+key = "$"
+seq = 3
+path = "assets/sounds/foxdot/_/dollar/3_bb_shake.wav"
+    
+[[sound]]
+key = "$"
+seq = 4
+path = "assets/sounds/foxdot/_/dollar/4_bb_big_kick.wav"
+    
+[[sound]]
+key = "$"
+seq = 5
+path = "assets/sounds/foxdot/_/dollar/5_bb_voice.wav"
+    
+[[sound]]
+key = "$"
+seq = 6
+path = "assets/sounds/foxdot/_/dollar/6_bb_snare.wav"
+    
+[[sound]]
+key = "$"
+seq = 7
+path = "assets/sounds/foxdot/_/dollar/7_bb_openhihat.wav"
+    
+[[sound]]
+key = "1"
+seq = 0
+path = "assets/sounds/foxdot/_/1/one1.wav"
+    
+[[sound]]
+key = "1"
+seq = 1
+path = "assets/sounds/foxdot/_/1/one2.wav"
+    
+[[sound]]
+key = "!"
+seq = 0
+path = "assets/sounds/foxdot/_/exclamation/ayy_0.wav"
+    
+[[sound]]
+key = "!"
+seq = 1
+path = "assets/sounds/foxdot/_/exclamation/ayy_1.wav"
+    
+[[sound]]
+key = "!"
+seq = 2
+path = "assets/sounds/foxdot/_/exclamation/yeah_0.wav"
+    
+[[sound]]
+key = "!"
+seq = 3
+path = "assets/sounds/foxdot/_/exclamation/yeah_1.wav"
+    
+[[sound]]
+key = "!"
+seq = 4
+path = "assets/sounds/foxdot/_/exclamation/yeah_3.wav"
+    
+[[sound]]
+key = "!"
+seq = 5
+path = "assets/sounds/foxdot/_/exclamation/yeah_4.wav"
+    
+[[sound]]
+key = "?"
+seq = 0
+path = "assets/sounds/foxdot/_/question/0.wav"
+    
+[[sound]]
+key = "="
+seq = 0
+path = "assets/sounds/foxdot/_/equals/0_hihat_open.wav"
+    
+[[sound]]
+key = "="
+seq = 1
+path = "assets/sounds/foxdot/_/equals/1_hihat_open.wav"
+    
+[[sound]]
+key = "="
+seq = 2
+path = "assets/sounds/foxdot/_/equals/3_hihat_open.wav"
+    
+[[sound]]
+key = "="
+seq = 3
+path = "assets/sounds/foxdot/_/equals/9_hihat_open.wav"
+    
+[[sound]]
+key = "*"
+seq = 0
+path = "assets/sounds/foxdot/_/asterix/0_clap.wav"
+    
+[[sound]]
+key = "*"
+seq = 1
+path = "assets/sounds/foxdot/_/asterix/1_clap.wav"
+    
+[[sound]]
+key = "*"
+seq = 2
+path = "assets/sounds/foxdot/_/asterix/2_clap.wav"
+    
+[[sound]]
+key = "*"
+seq = 3
+path = "assets/sounds/foxdot/_/asterix/4_clap.wav"
+    
+[[sound]]
+key = "*"
+seq = 4
+path = "assets/sounds/foxdot/_/asterix/5_clap.wav"
+    
+[[sound]]
+key = "*"
+seq = 5
+path = "assets/sounds/foxdot/_/asterix/6_clap.wav"
+    
+[[sound]]
+key = "^"
+seq = 0
+path = "assets/sounds/foxdot/_/caret/0.wav"
+    
+[[sound]]
+key = "^"
+seq = 1
+path = "assets/sounds/foxdot/_/caret/1.wav"
+    
+[[sound]]
+key = "^"
+seq = 2
+path = "assets/sounds/foxdot/_/caret/2.wav"
+    
+[[sound]]
+key = "^"
+seq = 3
+path = "assets/sounds/foxdot/_/caret/3.wav"
+    
+[[sound]]
+key = "^"
+seq = 4
+path = "assets/sounds/foxdot/_/caret/4.wav"
+    
+[[sound]]
+key = ";"
+seq = 0
+path = "assets/sounds/foxdot/_/semicolon/ikea_0.wav"
+    
+[[sound]]
+key = ";"
+seq = 1
+path = "assets/sounds/foxdot/_/semicolon/ikea_1.wav"
+    
+[[sound]]
+key = ";"
+seq = 2
+path = "assets/sounds/foxdot/_/semicolon/ikea_10.wav"
+    
+[[sound]]
+key = ";"
+seq = 3
+path = "assets/sounds/foxdot/_/semicolon/ikea_11.wav"
+    
+[[sound]]
+key = ";"
+seq = 4
+path = "assets/sounds/foxdot/_/semicolon/ikea_12.wav"
+    
+[[sound]]
+key = ";"
+seq = 5
+path = "assets/sounds/foxdot/_/semicolon/ikea_13.wav"
+    
+[[sound]]
+key = ";"
+seq = 6
+path = "assets/sounds/foxdot/_/semicolon/ikea_14.wav"
+    
+[[sound]]
+key = ";"
+seq = 7
+path = "assets/sounds/foxdot/_/semicolon/ikea_15.wav"
+    
+[[sound]]
+key = ";"
+seq = 8
+path = "assets/sounds/foxdot/_/semicolon/ikea_16.wav"
+    
+[[sound]]
+key = ";"
+seq = 9
+path = "assets/sounds/foxdot/_/semicolon/ikea_17.wav"
+    
+[[sound]]
+key = ";"
+seq = 10
+path = "assets/sounds/foxdot/_/semicolon/ikea_18.wav"
+    
+[[sound]]
+key = ";"
+seq = 11
+path = "assets/sounds/foxdot/_/semicolon/ikea_2.wav"
+    
+[[sound]]
+key = ";"
+seq = 12
+path = "assets/sounds/foxdot/_/semicolon/ikea_3.wav"
+    
+[[sound]]
+key = ";"
+seq = 13
+path = "assets/sounds/foxdot/_/semicolon/ikea_4.wav"
+    
+[[sound]]
+key = ";"
+seq = 14
+path = "assets/sounds/foxdot/_/semicolon/ikea_5.wav"
+    
+[[sound]]
+key = ";"
+seq = 15
+path = "assets/sounds/foxdot/_/semicolon/ikea_6.wav"
+    
+[[sound]]
+key = ";"
+seq = 16
+path = "assets/sounds/foxdot/_/semicolon/ikea_7.wav"
+    
+[[sound]]
+key = ";"
+seq = 17
+path = "assets/sounds/foxdot/_/semicolon/ikea_9.wav"
+    
+[[sound]]
+key = "<"
+seq = 0
+path = "assets/sounds/foxdot/_/lessthan/0.wav"
+    
+[[sound]]
+key = "@"
+seq = 0
+path = "assets/sounds/foxdot/_/at/gb_noise (1).wav"
+    
+[[sound]]
+key = "@"
+seq = 1
+path = "assets/sounds/foxdot/_/at/gb_noise (2).wav"
+    
+[[sound]]
+key = "@"
+seq = 2
+path = "assets/sounds/foxdot/_/at/gb_noise (3).wav"
+    
+[[sound]]
+key = "@"
+seq = 3
+path = "assets/sounds/foxdot/_/at/gb_noise (4).wav"
+    
+[[sound]]
+key = "@"
+seq = 4
+path = "assets/sounds/foxdot/_/at/gb_noise (5).wav"
+    
+[[sound]]
+key = "@"
+seq = 5
+path = "assets/sounds/foxdot/_/at/gb_noise (6).wav"
+    
+[[sound]]
+key = "|"
+seq = 0
+path = "assets/sounds/foxdot/_/bar/A#4_light.wav"
+    
+[[sound]]
+key = "|"
+seq = 1
+path = "assets/sounds/foxdot/_/bar/A3_light.wav"
+    
+[[sound]]
+key = "|"
+seq = 2
+path = "assets/sounds/foxdot/_/bar/C#4_light.wav"
+    
+[[sound]]
+key = "|"
+seq = 3
+path = "assets/sounds/foxdot/_/bar/D#3_light.wav"
+    
+[[sound]]
+key = "|"
+seq = 4
+path = "assets/sounds/foxdot/_/bar/D3_light.wav"
+    
+[[sound]]
+key = "|"
+seq = 5
+path = "assets/sounds/foxdot/_/bar/G3_light.wav"
+    
+[[sound]]
+key = "4"
+seq = 0
+path = "assets/sounds/foxdot/_/4/four1.wav"
+    
+[[sound]]
+key = "4"
+seq = 1
+path = "assets/sounds/foxdot/_/4/four2.wav"
+    
+[[sound]]
+key = "3"
+seq = 0
+path = "assets/sounds/foxdot/_/3/three1.wav"
+    
+[[sound]]
+key = "3"
+seq = 1
+path = "assets/sounds/foxdot/_/3/three2.wav"
+    
+[[sound]]
+key = "\\"
+seq = 0
+path = "assets/sounds/foxdot/_/backslash/0_lazer.wav"
+    
+[[sound]]
+key = "\\"
+seq = 1
+path = "assets/sounds/foxdot/_/backslash/1_lazer.wav"
+    
+[[sound]]
+key = "\\"
+seq = 2
+path = "assets/sounds/foxdot/_/backslash/2_lazer.wav"
+    
+[[sound]]
+key = "2"
+seq = 0
+path = "assets/sounds/foxdot/_/2/two1.wav"
+    
+[[sound]]
+key = "2"
+seq = 1
+path = "assets/sounds/foxdot/_/2/two2.wav"
+    
+[[sound]]
+key = "+"
+seq = 0
+path = "assets/sounds/foxdot/_/plus/wb_0.wav"
+    
+[[sound]]
+key = "+"
+seq = 1
+path = "assets/sounds/foxdot/_/plus/wb_1.wav"
+    
+[[sound]]
+key = "+"
+seq = 2
+path = "assets/sounds/foxdot/_/plus/wb_2.wav"
+    
+[[sound]]
+key = "~"
+seq = 0
+path = "assets/sounds/foxdot/_/tilde/0_ride.wav"
+    
+[[sound]]
+key = "~"
+seq = 1
+path = "assets/sounds/foxdot/_/tilde/1_ride.wav"
+    
+[[sound]]
+key = "~"
+seq = 2
+path = "assets/sounds/foxdot/_/tilde/2_ride.wav"
+    
+[[sound]]
+key = "~"
+seq = 3
+path = "assets/sounds/foxdot/_/tilde/3_ride.aif"
+    
+[[sound]]
+key = "~"
+seq = 4
+path = "assets/sounds/foxdot/_/tilde/4_ride.wav"
+    
+[[sound]]
+key = "F"
+seq = 0
+path = "assets/sounds/foxdot/f/upper/Stab 7.wav"
+    
+[[sound]]
+key = "F"
+seq = 1
+path = "assets/sounds/foxdot/f/upper/brand new.wav"
+    
+[[sound]]
+key = "F"
+seq = 2
+path = "assets/sounds/foxdot/f/upper/flared funk1.wav"
+    
+[[sound]]
+key = "F"
+seq = 3
+path = "assets/sounds/foxdot/f/upper/horn swipe.wav"
+    
+[[sound]]
+key = "F"
+seq = 4
+path = "assets/sounds/foxdot/f/upper/z_airhorn.wav"
+    
+[[sound]]
+key = "f"
+seq = 0
+path = "assets/sounds/foxdot/f/lower/Perc00.wav"
+    
+[[sound]]
+key = "f"
+seq = 1
+path = "assets/sounds/foxdot/f/lower/Perc01.wav"
+    
+[[sound]]
+key = "f"
+seq = 2
+path = "assets/sounds/foxdot/f/lower/Perc02.wav"
+    
+[[sound]]
+key = "f"
+seq = 3
+path = "assets/sounds/foxdot/f/lower/Perc03.wav"
+    
+[[sound]]
+key = "f"
+seq = 4
+path = "assets/sounds/foxdot/f/lower/Perc04.wav"
+    
+[[sound]]
+key = "O"
+seq = 0
+path = "assets/sounds/foxdot/o/upper/O (1).wav"
+    
+[[sound]]
+key = "O"
+seq = 1
+path = "assets/sounds/foxdot/o/upper/O (2).wav"
+    
+[[sound]]
+key = "O"
+seq = 2
+path = "assets/sounds/foxdot/o/upper/O (4).wav"
+    
+[[sound]]
+key = "O"
+seq = 3
+path = "assets/sounds/foxdot/o/upper/O (5).wav"
+    
+[[sound]]
+key = "O"
+seq = 4
+path = "assets/sounds/foxdot/o/upper/O (6).wav"
+    
+[[sound]]
+key = "O"
+seq = 5
+path = "assets/sounds/foxdot/o/upper/O (7).wav"
+    
+[[sound]]
+key = "O"
+seq = 6
+path = "assets/sounds/foxdot/o/upper/O (8).wav"
+    
+[[sound]]
+key = "o"
+seq = 0
+path = "assets/sounds/foxdot/o/lower/0_snare_drum.wav"
+    
+[[sound]]
+key = "o"
+seq = 1
+path = "assets/sounds/foxdot/o/lower/1_snare_drum.wav"
+    
+[[sound]]
+key = "o"
+seq = 2
+path = "assets/sounds/foxdot/o/lower/2_snare_drum.wav"
+    
+[[sound]]
+key = "o"
+seq = 3
+path = "assets/sounds/foxdot/o/lower/3_snare_drum.wav"
+    
+[[sound]]
+key = "o"
+seq = 4
+path = "assets/sounds/foxdot/o/lower/4_snare_drum.wav"
+    
+[[sound]]
+key = "H"
+seq = 0
+path = "assets/sounds/foxdot/h/upper/clap_0.wav"
+    
+[[sound]]
+key = "H"
+seq = 1
+path = "assets/sounds/foxdot/h/upper/clap_1.wav"
+    
+[[sound]]
+key = "H"
+seq = 2
+path = "assets/sounds/foxdot/h/upper/clap_2.wav"
+    
+[[sound]]
+key = "H"
+seq = 3
+path = "assets/sounds/foxdot/h/upper/clap_3.wav"
+    
+[[sound]]
+key = "H"
+seq = 4
+path = "assets/sounds/foxdot/h/upper/clap_4.wav"
+    
+[[sound]]
+key = "h"
+seq = 0
+path = "assets/sounds/foxdot/h/lower/snap_.wav"
+    
+[[sound]]
+key = "h"
+seq = 1
+path = "assets/sounds/foxdot/h/lower/snap_0.wav"
+    
+[[sound]]
+key = "h"
+seq = 2
+path = "assets/sounds/foxdot/h/lower/snap_1.wav"
+    
+[[sound]]
+key = "h"
+seq = 3
+path = "assets/sounds/foxdot/h/lower/snap_2.wav"
+    
+[[sound]]
+key = "h"
+seq = 4
+path = "assets/sounds/foxdot/h/lower/snap_3.wav"
+    
+[[sound]]
+key = "h"
+seq = 5
+path = "assets/sounds/foxdot/h/lower/snap_4.wav"
+    
+[[sound]]
+key = "M"
+seq = 0
+path = "assets/sounds/foxdot/m/upper/tom (1).wav"
+    
+[[sound]]
+key = "M"
+seq = 1
+path = "assets/sounds/foxdot/m/upper/tom (2).wav"
+    
+[[sound]]
+key = "M"
+seq = 2
+path = "assets/sounds/foxdot/m/upper/tom (3).wav"
+    
+[[sound]]
+key = "M"
+seq = 3
+path = "assets/sounds/foxdot/m/upper/tom (4).wav"
+    
+[[sound]]
+key = "M"
+seq = 4
+path = "assets/sounds/foxdot/m/upper/tom (5).wav"
+    
+[[sound]]
+key = "m"
+seq = 0
+path = "assets/sounds/foxdot/m/lower/0_tom.wav"
+    
+[[sound]]
+key = "m"
+seq = 1
+path = "assets/sounds/foxdot/m/lower/1_tom.wav"
+    
+[[sound]]
+key = "m"
+seq = 2
+path = "assets/sounds/foxdot/m/lower/2_tom.wav"
+    
+[[sound]]
+key = "m"
+seq = 3
+path = "assets/sounds/foxdot/m/lower/3_tom.WAV"
+    
+[[sound]]
+key = "m"
+seq = 4
+path = "assets/sounds/foxdot/m/lower/4_tom.aif"
+    
+[[sound]]
+key = "J"
+seq = 0
+path = "assets/sounds/foxdot/j/upper/11.wav"
+    
+[[sound]]
+key = "J"
+seq = 1
+path = "assets/sounds/foxdot/j/upper/145.wav"
+    
+[[sound]]
+key = "J"
+seq = 2
+path = "assets/sounds/foxdot/j/upper/76.wav"
+    
+[[sound]]
+key = "J"
+seq = 3
+path = "assets/sounds/foxdot/j/upper/81.wav"
+    
+[[sound]]
+key = "j"
+seq = 0
+path = "assets/sounds/foxdot/j/lower/0.wav"
+    
+[[sound]]
+key = "j"
+seq = 1
+path = "assets/sounds/foxdot/j/lower/44.wav"
+    
+[[sound]]
+key = "j"
+seq = 2
+path = "assets/sounds/foxdot/j/lower/45.wav"
+    
+[[sound]]
+key = "j"
+seq = 3
+path = "assets/sounds/foxdot/j/lower/46.wav"
+    
+[[sound]]
+key = "j"
+seq = 4
+path = "assets/sounds/foxdot/j/lower/47.wav"
+    
+[[sound]]
+key = "j"
+seq = 5
+path = "assets/sounds/foxdot/j/lower/48.wav"
+    
+[[sound]]
+key = "C"
+seq = 0
+path = "assets/sounds/foxdot/c/upper/voice_1.wav"
+    
+[[sound]]
+key = "C"
+seq = 1
+path = "assets/sounds/foxdot/c/upper/voice_2.wav"
+    
+[[sound]]
+key = "C"
+seq = 2
+path = "assets/sounds/foxdot/c/upper/voice_3.wav"
+    
+[[sound]]
+key = "C"
+seq = 3
+path = "assets/sounds/foxdot/c/upper/voice_4.wav"
+    
+[[sound]]
+key = "c"
+seq = 0
+path = "assets/sounds/foxdot/c/lower/conga_0.aif"
+    
+[[sound]]
+key = "c"
+seq = 1
+path = "assets/sounds/foxdot/c/lower/conga_1.aif"
+    
+[[sound]]
+key = "c"
+seq = 2
+path = "assets/sounds/foxdot/c/lower/conga_2.aif"
+    
+[[sound]]
+key = "c"
+seq = 3
+path = "assets/sounds/foxdot/c/lower/conga_3.aif"
+    
+[[sound]]
+key = "c"
+seq = 4
+path = "assets/sounds/foxdot/c/lower/conga_4.aif"
+    
+[[sound]]
+key = "c"
+seq = 5
+path = "assets/sounds/foxdot/c/lower/conga_5.aif"
+    
+[[sound]]
+key = "D"
+seq = 0
+path = "assets/sounds/foxdot/d/upper/alt_snare_0.wav"
+    
+[[sound]]
+key = "D"
+seq = 1
+path = "assets/sounds/foxdot/d/upper/alt_snare_1.wav"
+    
+[[sound]]
+key = "D"
+seq = 2
+path = "assets/sounds/foxdot/d/upper/alt_snare_2.wav"
+    
+[[sound]]
+key = "D"
+seq = 3
+path = "assets/sounds/foxdot/d/upper/alt_snare_3.wav"
+    
+[[sound]]
+key = "d"
+seq = 0
+path = "assets/sounds/foxdot/d/lower/0_wood.wav"
+    
+[[sound]]
+key = "d"
+seq = 1
+path = "assets/sounds/foxdot/d/lower/1_wood.wav"
+    
+[[sound]]
+key = "d"
+seq = 2
+path = "assets/sounds/foxdot/d/lower/2_wood.wav"
+    
+[[sound]]
+key = "d"
+seq = 3
+path = "assets/sounds/foxdot/d/lower/3_wood.wav"
+    
+[[sound]]
+key = "V"
+seq = 0
+path = "assets/sounds/foxdot/v/upper/heavy 0.wav"
+    
+[[sound]]
+key = "V"
+seq = 1
+path = "assets/sounds/foxdot/v/upper/heavy 1.wav"
+    
+[[sound]]
+key = "V"
+seq = 2
+path = "assets/sounds/foxdot/v/upper/heavy 2.wav"
+    
+[[sound]]
+key = "V"
+seq = 3
+path = "assets/sounds/foxdot/v/upper/heavy 3.wav"
+    
+[[sound]]
+key = "V"
+seq = 4
+path = "assets/sounds/foxdot/v/upper/heavy 6.wav"
+    
+[[sound]]
+key = "v"
+seq = 0
+path = "assets/sounds/foxdot/v/lower/0_low_bass.wav"
+    
+[[sound]]
+key = "v"
+seq = 1
+path = "assets/sounds/foxdot/v/lower/1_low_bass.wav"
+    
+[[sound]]
+key = "Q"
+seq = 0
+path = "assets/sounds/foxdot/q/upper/G1.wav"
+    
+[[sound]]
+key = "Q"
+seq = 1
+path = "assets/sounds/foxdot/q/upper/G2.wav"
+    
+[[sound]]
+key = "Q"
+seq = 2
+path = "assets/sounds/foxdot/q/upper/G3.wav"
+    
+[[sound]]
+key = "q"
+seq = 0
+path = "assets/sounds/foxdot/q/lower/113.wav"
+    
+[[sound]]
+key = "q"
+seq = 1
+path = "assets/sounds/foxdot/q/lower/Apex & Motivation Synth 1.wav"
+    
+[[sound]]
+key = "X"
+seq = 0
+path = "assets/sounds/foxdot/x/upper/0_kick_drum.wav"
+    
+[[sound]]
+key = "X"
+seq = 1
+path = "assets/sounds/foxdot/x/upper/1_bass_drum.wav"
+    
+[[sound]]
+key = "X"
+seq = 2
+path = "assets/sounds/foxdot/x/upper/3_kick_drum_lo.wav"
+    
+[[sound]]
+key = "X"
+seq = 3
+path = "assets/sounds/foxdot/x/upper/4_deep_drum.wav"
+    
+[[sound]]
+key = "x"
+seq = 0
+path = "assets/sounds/foxdot/x/lower/0_kick_drum.wav"
+    
+[[sound]]
+key = "x"
+seq = 1
+path = "assets/sounds/foxdot/x/lower/1_kick_drum.wav"
+    
+[[sound]]
+key = "x"
+seq = 2
+path = "assets/sounds/foxdot/x/lower/3_kick_drum.wav"
+    
+[[sound]]
+key = "x"
+seq = 3
+path = "assets/sounds/foxdot/x/lower/4_kick_drum.wav"
+    
+[[sound]]
+key = "x"
+seq = 4
+path = "assets/sounds/foxdot/x/lower/5_kick_drum.wav"
+    
+[[sound]]
+key = "E"
+seq = 0
+path = "assets/sounds/foxdot/e/upper/E1.wav"
+    
+[[sound]]
+key = "E"
+seq = 1
+path = "assets/sounds/foxdot/e/upper/E2.wav"
+    
+[[sound]]
+key = "E"
+seq = 2
+path = "assets/sounds/foxdot/e/upper/E3.wav"
+    
+[[sound]]
+key = "e"
+seq = 0
+path = "assets/sounds/foxdot/e/lower/cb0.wav"
+    
+[[sound]]
+key = "e"
+seq = 1
+path = "assets/sounds/foxdot/e/lower/cb1.wav"
+    
+[[sound]]
+key = "e"
+seq = 2
+path = "assets/sounds/foxdot/e/lower/cb2.wav"
+    
+[[sound]]
+key = "B"
+seq = 0
+path = "assets/sounds/foxdot/b/upper/0.wav"
+    
+[[sound]]
+key = "B"
+seq = 1
+path = "assets/sounds/foxdot/b/upper/56.wav"
+    
+[[sound]]
+key = "B"
+seq = 2
+path = "assets/sounds/foxdot/b/upper/57.wav"
+    
+[[sound]]
+key = "B"
+seq = 3
+path = "assets/sounds/foxdot/b/upper/beep (5).wav"
+    
+[[sound]]
+key = "B"
+seq = 4
+path = "assets/sounds/foxdot/b/upper/beep (6).wav"
+    
+[[sound]]
+key = "b"
+seq = 0
+path = "assets/sounds/foxdot/b/lower/beep (3).wav"
+    
+[[sound]]
+key = "b"
+seq = 1
+path = "assets/sounds/foxdot/b/lower/dot (1).wav"
+    
+[[sound]]
+key = "b"
+seq = 2
+path = "assets/sounds/foxdot/b/lower/dot (2).wav"
+    
+[[sound]]
+key = "b"
+seq = 3
+path = "assets/sounds/foxdot/b/lower/dot (3).wav"
+    
+[[sound]]
+key = "b"
+seq = 4
+path = "assets/sounds/foxdot/b/lower/dot (4).wav"
+    
+[[sound]]
+key = "K"
+seq = 0
+path = "assets/sounds/foxdot/k/upper/0_misc.wav"
+    
+[[sound]]
+key = "K"
+seq = 1
+path = "assets/sounds/foxdot/k/upper/1_misc.wav"
+    
+[[sound]]
+key = "k"
+seq = 0
+path = "assets/sounds/foxdot/k/lower/keys_0.wav"
+    
+[[sound]]
+key = "k"
+seq = 1
+path = "assets/sounds/foxdot/k/lower/keys_1.wav"
+    
+[[sound]]
+key = "k"
+seq = 2
+path = "assets/sounds/foxdot/k/lower/keys_2.wav"
+    
+[[sound]]
+key = "k"
+seq = 3
+path = "assets/sounds/foxdot/k/lower/keys_3.wav"
+    
+[[sound]]
+key = "L"
+seq = 0
+path = "assets/sounds/foxdot/l/upper/glitch_0.wav"
+    
+[[sound]]
+key = "L"
+seq = 1
+path = "assets/sounds/foxdot/l/upper/glitch_1.wav"
+    
+[[sound]]
+key = "L"
+seq = 2
+path = "assets/sounds/foxdot/l/upper/glitch_2.wav"
+    
+[[sound]]
+key = "L"
+seq = 3
+path = "assets/sounds/foxdot/l/upper/glitch_3.wav"
+    
+[[sound]]
+key = "L"
+seq = 4
+path = "assets/sounds/foxdot/l/upper/glitch_4.wav"
+    
+[[sound]]
+key = "L"
+seq = 5
+path = "assets/sounds/foxdot/l/upper/glitch_40.wav"
+    
+[[sound]]
+key = "l"
+seq = 0
+path = "assets/sounds/foxdot/l/lower/perc_0.wav"
+    
+[[sound]]
+key = "l"
+seq = 1
+path = "assets/sounds/foxdot/l/lower/perc_1.wav"
+    
+[[sound]]
+key = "l"
+seq = 2
+path = "assets/sounds/foxdot/l/lower/perc_2.wav"
+    
+[[sound]]
+key = "l"
+seq = 3
+path = "assets/sounds/foxdot/l/lower/perc_3.wav"
+    
+[[sound]]
+key = "l"
+seq = 4
+path = "assets/sounds/foxdot/l/lower/perc_4.wav"
+    
+[[sound]]
+key = "l"
+seq = 5
+path = "assets/sounds/foxdot/l/lower/perc_5.wav"
+    
+[[sound]]
+key = "l"
+seq = 6
+path = "assets/sounds/foxdot/l/lower/perc_6.wav"
+    
+[[sound]]
+key = "l"
+seq = 7
+path = "assets/sounds/foxdot/l/lower/perc_7.wav"
+    
+[[sound]]
+key = "l"
+seq = 8
+path = "assets/sounds/foxdot/l/lower/perc_8.wav"
+    
+[[sound]]
+key = "Y"
+seq = 0
+path = "assets/sounds/foxdot/y/upper/bleep_0.wav"
+    
+[[sound]]
+key = "Y"
+seq = 1
+path = "assets/sounds/foxdot/y/upper/bleep_1.wav"
+    
+[[sound]]
+key = "Y"
+seq = 2
+path = "assets/sounds/foxdot/y/upper/bleep_2.wav"
+    
+[[sound]]
+key = "Y"
+seq = 3
+path = "assets/sounds/foxdot/y/upper/bleep_3.wav"
+    
+[[sound]]
+key = "Y"
+seq = 4
+path = "assets/sounds/foxdot/y/upper/bleep_4.wav"
+    
+[[sound]]
+key = "y"
+seq = 0
+path = "assets/sounds/foxdot/y/lower/can_0.wav"
+    
+[[sound]]
+key = "y"
+seq = 1
+path = "assets/sounds/foxdot/y/lower/can_1.wav"
+    
+[[sound]]
+key = "y"
+seq = 2
+path = "assets/sounds/foxdot/y/lower/can_2.wav"
+    
+[[sound]]
+key = "y"
+seq = 3
+path = "assets/sounds/foxdot/y/lower/can_4.wav"
+    
+[[sound]]
+key = "P"
+seq = 0
+path = "assets/sounds/foxdot/p/upper/08-tabla_tas1.wav"
+    
+[[sound]]
+key = "P"
+seq = 1
+path = "assets/sounds/foxdot/p/upper/09-tabla_tas2.wav"
+    
+[[sound]]
+key = "P"
+seq = 2
+path = "assets/sounds/foxdot/p/upper/10-tabla_tas3.wav"
+    
+[[sound]]
+key = "P"
+seq = 3
+path = "assets/sounds/foxdot/p/upper/15-tabla_tun1.wav"
+    
+[[sound]]
+key = "P"
+seq = 4
+path = "assets/sounds/foxdot/p/upper/16-tabla_tun2.wav"
+    
+[[sound]]
+key = "P"
+seq = 5
+path = "assets/sounds/foxdot/p/upper/17-tabla_tun3.wav"
+    
+[[sound]]
+key = "p"
+seq = 0
+path = "assets/sounds/foxdot/p/lower/0_tabla.wav"
+    
+[[sound]]
+key = "p"
+seq = 1
+path = "assets/sounds/foxdot/p/lower/11-tabla_te1.wav"
+    
+[[sound]]
+key = "p"
+seq = 2
+path = "assets/sounds/foxdot/p/lower/12-tabla_te2.wav"
+    
+[[sound]]
+key = "p"
+seq = 3
+path = "assets/sounds/foxdot/p/lower/13-tabla_te_m.wav"
+    
+[[sound]]
+key = "p"
+seq = 4
+path = "assets/sounds/foxdot/p/lower/14-tabla_te_ne.wav"
+    
+[[sound]]
+key = "p"
+seq = 5
+path = "assets/sounds/foxdot/p/lower/1_tabla.wav"
+    
+[[sound]]
+key = "p"
+seq = 6
+path = "assets/sounds/foxdot/p/lower/2_tabla.wav"
+    
+[[sound]]
+key = "p"
+seq = 7
+path = "assets/sounds/foxdot/p/lower/3_tabla.wav"
+    
+[[sound]]
+key = "W"
+seq = 0
+path = "assets/sounds/foxdot/w/upper/gb_kick 1.wav"
+    
+[[sound]]
+key = "W"
+seq = 1
+path = "assets/sounds/foxdot/w/upper/gb_kick 3.wav"
+    
+[[sound]]
+key = "W"
+seq = 2
+path = "assets/sounds/foxdot/w/upper/gb_kick 4.wav"
+    
+[[sound]]
+key = "w"
+seq = 0
+path = "assets/sounds/foxdot/w/lower/w1.wav"
+    
+[[sound]]
+key = "w"
+seq = 1
+path = "assets/sounds/foxdot/w/lower/w2.wav"
+    
+[[sound]]
+key = "w"
+seq = 2
+path = "assets/sounds/foxdot/w/lower/w3.wav"
+    
+[[sound]]
+key = "w"
+seq = 3
+path = "assets/sounds/foxdot/w/lower/w4.wav"
+    

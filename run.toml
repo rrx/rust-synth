@@ -1,0 +1,43 @@
+[[device]]
+key = "pads"
+name = "Akai MPD18"
+input = true
+mapping = [
+  { sound = 'a', note = 31 },
+  { sound = 'b', note = 33 },
+  { sound = 'c', note = 35, channel = 1 },
+  { sound = 'd', note = 36, channel = 1 },
+  { sound = 'd', note = 38, channel = 1 },
+  { sound = 'd', note = 40, channel = 1 },
+  { sound = 'd', note = 42, channel = 1 },
+  { sound = 'd', note = 43, channel = 1 },
+  { sound = 'f', note = 45, channel = 1 },
+  { sound = 'g', note = 47, channel = 1 },
+
+  # map after touch to a signal
+  { aftertouch = true, signal = "touch", min = 0, max = 1 },
+  # map the slider to volume, between 0,1
+  { controller = 1, signal = "volume", min = 0, max = 1 },
+]
+
+[[device]]
+key = "piano"
+name = "CASIO USB-MIDI"
+input = true
+
+[[device]]
+key = "mics"
+name = "UMC404HD 192k"
+
+[[device]]
+key = "contoller"
+name = "APC Key 25"
+input = true
+
+[[device]]
+key = "output"
+type = "virtual"
+name = "TestOutput"
+input = true
+output = true
+
