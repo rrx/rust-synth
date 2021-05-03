@@ -103,8 +103,8 @@ impl MidiInputData {
                 let key1 = format!("{}_{}", note, channel);
                 let key2 = format!("{}", note);
                 println!("x: {} {}", key1, key2);
-                for k in [key1, key2] {
-                    if let Some(ParsedDeviceMap::SoundMap { key, note, channel }) = self.sound_mappings.get(&k) {
+                for k in [key1, key2].iter() {
+                    if let Some(ParsedDeviceMap::SoundMap { key, note, channel }) = self.sound_mappings.get(&k.to_string()) {
                         println!("map: {} {} {:?}", key, note, channel);
                         if let Some(sound) = self.cfg.sounds.get(&key, 0) {
                             self.send_sound(ts, sound.path);

@@ -24,4 +24,6 @@ midly = "0.5"
 vst = { git = "https://github.com/rustaudio/vst-rs" }
 arrayvec = "0.7"
 notify = "4.0"
-cpal = "0.13"
+dasp = { version = "0.11", features = ["all"] }
+dsp-chain = { git = "https://github.com/rrx/dsp-chain.git", branch = "master" }
+num-traits = "0.2"
