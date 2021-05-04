@@ -8,14 +8,13 @@ mod audio;
 mod midi;
 mod message;
 
-
 struct Model {
     cfg: Arc<config::Config>,
     // stream: nannou_audio::Stream<audio::Audio>,
     threads: Vec<std::thread::JoinHandle<()>>,
     events: message::Events,
-    midi: midi::MidiModel,
-    audio: audio::Audio
+    pub midi: midi::MidiModel,
+    pub audio: audio::Audio
 }
 impl Default for Model {
     fn default() -> Self {
@@ -93,13 +92,28 @@ fn event(app: &App, model: &mut Model, event: Event) {
             let n = (n1 - n0 + 1) % 10;
             let s = format!("{}", n);
             println!("Key#: {:?}/{}", key, &s);
-            audio::launch_sound(&model.cfg, model.events.audio_tx.clone(), &s);
+            // model.audio.sounds.on()
+            audio::launch_sound(&model.cfg, model.events.audio_tx.clone(), &s, true);
+        }
+        Event::WindowEvent { id: _, simple: Some(KeyReleased(key)) } if key >= Key1 && key <= Key0 => {
+            let n1 = key as u32;
+            let n0 = Key1 as u32;
+            let n = (n1 - n0 + 1) % 10;
+            let s = format!("{}", n);
+            println!("Key#: {:?}/{}", key, &s);
+            audio::launch_sound(&model.cfg, model.events.audio_tx.clone(), &s, false);
         }
         Event::WindowEvent { id: _, simple: Some(KeyPressed(key)) } => {
             let k = format!("{:?}", key);
             let v = key as u32;
             println!("Key: {}/{}", k, v);
-            audio::launch_sound(&model.cfg, model.events.audio_tx.clone(), &k);
+            audio::launch_sound(&model.cfg, model.events.audio_tx.clone(), &k, true);
+        }
+        Event::WindowEvent { id: _, simple: Some(KeyReleased(key)) } => {
+            let k = format!("{:?}", key);
+            let v = key as u32;
+            println!("Key: {}/{}", k, v);
+            audio::launch_sound(&model.cfg, model.events.audio_tx.clone(), &k, false);
         }
 
         // KeyReleased(_key) => {}

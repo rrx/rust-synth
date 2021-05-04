@@ -8,7 +8,7 @@ use super::audio;
 #[derive(Debug,Clone)]
 pub enum Message {
     ConfigUpdate(Arc<config::Config>),
-    Quit
+    // Quit
 }
 
 #[derive(Debug,Clone)]

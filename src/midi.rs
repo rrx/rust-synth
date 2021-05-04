@@ -28,8 +28,8 @@ impl Default for MidiModel {
 
 // #[derive(Debug)]
 pub struct NamedOutputConnection {
-    key: String,
-    name: String,
+    pub key: String,
+    pub name: String,
     conn: midir::MidiOutputConnection
 }
 impl NamedOutputConnection {
@@ -40,8 +40,8 @@ impl NamedOutputConnection {
 
 // #[derive(Debug)]
 pub struct NamedInputConnection {
-    key: String,
-    name: String,
+    pub key: String,
+    pub name: String,
     conn: midir::MidiInputConnection<MidiInputData>
 }
 impl NamedInputConnection {
@@ -98,6 +98,7 @@ impl MidiInputData {
         println!("[{}] MidiRX({}): {:?}", ts, &self.device.key, event);
         match event {
             LiveEvent::Midi { channel, message: MidiMessage::NoteOff { key: note, vel: _ }} => {
+                self.audio_tx.send(AudioMessage::SoundOff {id: 0}).unwrap();
             }
             LiveEvent::Midi { channel, message: MidiMessage::NoteOn { key: note, vel: _ }} => {
                 let key1 = format!("{}_{}", note, channel);

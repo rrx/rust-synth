@@ -4,86 +4,38 @@ use std::collections::HashMap;
 use crossbeam::channel::{Sender, Receiver, unbounded};
 use super::config::*;
 use std::sync::{Arc, Mutex};
-use dasp::slice::ToFrameSliceMut;
-use dsp::{Frame, FromSample, Graph, Node, Sample, Walker};
-use dsp::daggy::NodeIndex;
+
+mod sounds;
+mod dasp_test;
+mod general;
+pub(crate) mod parameters;
+
+use parameters::Parameters;
 
 pub struct AudioData<R> {
-    pub(crate) sounds: Vec<audrey::read::BufFileReader>,
-    signals: HashMap<String, R>,
+    pub(crate) sounds: sounds::Sounds,
+    params: Parameters<R>,
     pub(crate) audio_tx: Sender<AudioMessage>,
     pub(crate) audio_rx: Receiver<AudioMessage>,
-    graph: Graph<[f32; 2], DspNode>,
-    synth: NodeIndex<usize>
-    // streams: Vec<StreamData<R>>,
+    dasp_test: dasp_test::DaspTestData,
+    general: general::General
 }
-const CHANNELS: usize = 2;
-const A5_HZ: Frequency = 440.0;
-const D5_HZ: Frequency = 587.33;
-const F5_HZ: Frequency = 698.46;
-/// SoundStream is currently generic over i8, i32 and f32. Feel free to change it!
-type Output = f32;
-type FrameType = [Output; CHANNELS];
-type Phase = f64;
-type Frequency = f64;
-type Volume = f32;
 
-/// Return a sine wave for the given phase.
-fn sine_wave<S: Sample>(phase: Phase, volume: Volume) -> S
-where
-    S: Sample + FromSample<f32>,
-{
-    use std::f64::consts::PI;
-    ((phase * PI * 2.0).sin() as f32 * volume).to_sample::<S>()
-}
-/// Our type for which we will implement the `Dsp` trait.
-#[derive(Debug)]
-enum DspNode {
-    /// Synth will be our demonstration of a master GraphNode.
-    Synth,
-    /// Oscillator will be our generator type of node, meaning that we will override
-    /// the way it provides audio via its `audio_requested` method.
-    Oscillator(Phase, Frequency, Volume),
-}
-impl Node<FrameType> for DspNode {
-    /// Here we'll override the audio_requested method and generate a sine wave.
-    fn audio_requested(&mut self, buffer: &mut [FrameType], sample_hz: f64) {
-        match *self {
-            DspNode::Synth => (),
-            DspNode::Oscillator(ref mut phase, frequency, volume) => {
-                dsp::slice::map_in_place(buffer, |_| {
-                    let val = sine_wave(*phase, volume);
-                    *phase += frequency / sample_hz;
-                    Frame::from_fn(|_| val)
-                });
-            }
-        }
-    }
-}
-impl<R> Default for AudioData<R> {
+impl<R> Default for AudioData<R>
+    where R: dasp::sample::Sample<Float = R> + std::ops::Div
+    {
     fn default() -> Self {
         let (audio_tx, audio_rx) = unbounded();
-        let mut graph = Graph::new();
-        let synth = graph.add_node(DspNode::Synth);
-        // Connect a few oscillators to the synth.
-        let (_, oscillator_a) = graph.add_input(DspNode::Oscillator(0.0, A5_HZ, 0.2), synth);
-        graph.add_input(DspNode::Oscillator(0.0, D5_HZ, 0.1), synth);
-        graph.add_input(DspNode::Oscillator(0.0, F5_HZ, 0.15), synth);
-        // If adding a connection between two nodes would create a cycle, Graph will return an Err.
-        if let Err(err) = graph.add_connection(synth, oscillator_a) {
-            println!("Testing for cycle error: {}", &err);
-        }
-        // Set the synth as the master node for the graph.
-        graph.set_master(Some(synth));
-
+        let mut params = Parameters::default();
+        params.update("volume", &R::IDENTITY);
+        params.update("pitch", &R::EQUILIBRIUM);
         Self {
-            sounds: vec![],
+            sounds: sounds::Sounds::default(),
             audio_tx,
             audio_rx,
-            signals: HashMap::new(),
-            // streams: vec![]
-            graph,
-            synth
+            params,
+            dasp_test: dasp_test::DaspTestData::default(),
+            general: general::General::default()
         }
     }
 }
@@ -117,15 +69,10 @@ impl Default for Audio {
             .unwrap();
 
         Self { 
-            // sounds: vec![],
-            // host,
             host_buffer,
             audio_rx,
             audio_tx,
-            // signals: HashMap::new(),
             stream: audio_stream
-            // host,
-            // output
         }
     }
 }
@@ -138,84 +85,60 @@ pub enum AudioMessage {
 // A function that renders the given `Audio` to the given `Buffer`.
 // In this case we play the audio file.
 pub fn audio(data: &mut AudioData<f32>, buffer: &mut nannou_audio::Buffer) {
-    let mut have_ended = vec![];
-    let len_frames = buffer.len_frames();
-
-    let channels = buffer.channels();
-    let sample_rate = buffer.sample_rate();
-
-    dsp::slice::equilibrium(buffer);
-    let mut v: Vec<FrameType> = Vec::with_capacity(buffer.len_frames());
-    v.resize(buffer.len_frames(), FrameType::EQUILIBRIUM);
-    let mut samples = v.into_boxed_slice();
-    data.graph.audio_requested(&mut samples, sample_rate as f64);
-
     // process messages
-    match data.audio_rx.try_recv() {
-        Ok(AudioMessage::SoundOn { id, sound }) => {
-            data.sounds.push(sound);
-        }
-        Ok(AudioMessage::SignalUpdate { key, value }) => {
-            data.signals.insert(key, value);
-        }
-        _ => ()
-    }
+    let messages = pull_messages(data);
+    process_messages(data, messages);
+    // dsp::slice::equilibrium(buffer);
+    data.sounds.param("A", 1.0);
+    data.sounds.process(buffer);
 
-    let volume = data.signals.get("volume").unwrap_or(&0.5);
+    data.dasp_test.param("A", 1.0);
+    data.dasp_test.param("R", data.params.get("pitch"));
+    data.dasp_test.process(buffer);
 
-    for (frame, graph_frame) in buffer.frames_mut().zip(samples.iter()) {
-        for (sample, graph_sample) in frame.iter_mut().zip(graph_frame) {
-            *sample += graph_sample * volume;
-        }
-    }
-
-    // Sum all of the sounds onto the buffer.
-    for (i, sound) in data.sounds.iter_mut().enumerate() {
-        let mut frame_count = 0;
-        let file_frames = sound.frames::<[f32; 2]>().filter_map(Result::ok);
-        for (frame, file_frame) in buffer.frames_mut().zip(file_frames) {
-            for (sample, file_sample) in frame.iter_mut().zip(&file_frame) {
-                *sample += *file_sample * volume;
-            }
-            frame_count += 1;
-        }
-
-        // If the sound yielded less samples than are in the buffer, it must have ended.
-        if frame_count < len_frames {
-            have_ended.push(i);
-        }
-    }
-
-    // Remove all sounds that have ended.
-    for i in have_ended.into_iter().rev() {
-        data.sounds.remove(i);
-    }
-
-    let pitch_control = *data.signals.get("pitch").unwrap_or(&0.);
-
-    // Traverse inputs or outputs of a node with the following pattern.
-    let mut inputs = data.graph.inputs(data.synth);
-    while let Some(input_idx) = inputs.next_node(&data.graph) {
-        if let DspNode::Oscillator(_, ref mut pitch, _) = data.graph[input_idx] {
-            // Pitch down our oscillators for fun.
-            *pitch -= 0.1 * pitch_control as f64;
-        }
-    }
+    data.general.param("A", data.params.get("volume"));
+    data.general.process(buffer);
 }
 
-pub fn launch_sound(cfg: &Arc<Config>, audio_tx: Sender<AudioMessage>, name: &str) {
-    let maybe_sound = cfg.sounds.get(&name.to_string(), 0);
-    if let Some(sound) = maybe_sound {
-        println!("Load {}, {}", name, sound.path);
-        let r_sound = audrey::open(&sound.path);
-        if let Ok(s) = r_sound {
-            println!("Play {}", name);
-            audio_tx.send(AudioMessage::SoundOn {id: 0, sound: s}).unwrap();
+fn pull_messages(data: &AudioData<f32>) -> Vec<AudioMessage> {
+    data.audio_rx.try_iter().collect()
+}
+
+fn process_messages(data: &mut AudioData<f32>, messages: Vec<AudioMessage>) {
+    for m in messages {
+        match m {
+            AudioMessage::SoundOn { id, sound } => {
+                data.sounds.on(id, sound);
+            }
+            AudioMessage::SoundOff { id } => {
+                data.sounds.off(id);
+            }
+            AudioMessage::SignalUpdate { key, value } => {
+                data.params.update(&key, &value);
+            }
+            _ => ()
+        }
+    };
+}
+
+pub fn launch_sound(cfg: &Arc<Config>, audio_tx: Sender<AudioMessage>, name: &str, on: bool) {
+    if on {
+        let maybe_sound = cfg.sounds.get(&name.to_string(), 0);
+        if let Some(sound) = maybe_sound {
+            println!("Load {}, {}", name, sound.path);
+            let r_sound = audrey::open(&sound.path);
+            if let Ok(s) = r_sound {
+                println!("Play {}", name);
+                audio_tx.send(AudioMessage::SoundOn {id: 0, sound: s}).unwrap();
+            } else {
+                println!("Unable to load sound {}", &sound.path);
+            }
         } else {
-            println!("Unable to load sound {}", &sound.path);
+            println!("Sounds not found {}", name);
         }
     } else {
-        println!("Sounds not found {}", name);
+        println!("Stop {}", name);
+        audio_tx.send(AudioMessage::SoundOff {id: 0}).unwrap();
     }
 }
 
