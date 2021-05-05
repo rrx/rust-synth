@@ -61,12 +61,7 @@ impl Sounds {
     }
 
     pub fn process(&mut self, buffer: &mut nannou_audio::Buffer) {
-        let len_frames = buffer.len_frames();
-
-        let sound_amp = self.params.get("A");
-        let consumed = self.consume(buffer);
-
-        for id in consumed {
+        for id in self.consume(buffer) {
             self.sounds.remove(&id);
         }
     }
